@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-rose-700 mt-12">
+    <header>
+        <h1 class="text-6xl text-center mt-12 font-medium text-white">Let's get some <span class="text-sky-600">Mooooney</span>!!!</h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto mt-12">
+                <div class="bg-yellow-400 py-6 px-6  rounded-lg">
+                    <h4 class="text-3xl text-white font-medium">Deposit</h4>
+                    <h2 class="text-5xl text-white font-medium">$<span id="d-text">00</span></h2>
+                </div>
+                <div class="bg-green-500 py-6 px-6  rounded-lg">
+                    <h4 class="text-3xl text-white font-medium">Withdraw</h4>
+                    <h2 class="text-5xl text-white font-medium">$<span id="w-total">00</span></h2>
+                </div>
+                <div class="bg-blue-400 py-6 px-6  rounded-lg">
+                    <h4 class="text-3xl text-white font-medium">Balance</h4>
+                    <h2 class="text-5xl text-white font-medium">$<span id="b-total">1200</span></h2>
+                </div>
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="grid grid-cols-2 w-3/4 mx-auto mt-12 gap-4">
+                <div class="bg-lime-700 px-6 py-6 rounded-lg">
+                    <h2 class="text-3xl font-semibold mb-4">Deposit</h2>
+                    <input type="email" name="" id="deposite-field" class="block w-3/4 mb-4 px-2 py-1 rounded-lg" placeholder="$ Amount you want to deposite">
+                    <button class="bg-rose-500 px-8 py-3 font-semibold text-white rounded-lg hover:bg-sky-700" id="d-btn">submit</button>
+                </div>
+                <div class="bg-emerald-600 px-6 py-6 rounded-lg">
+                    <h2 class="text-3xl font-semibold mb-4">Withdraw</h2>
+                    <input type="email" name="" id="Withdraw-field" class="block w-3/4 mb-4 px-2 py-1 rounded-lg" placeholder="$ Amount you want to withdraw">
+                    <button class="bg-rose-500 px-8 py-3 font-semibold text-white rounded-lg hover:bg-sky-700" id="w-btn">submit</button>
+                </div>
+               
+            </div>
+        </section>
+    </main>
+
+    <script src="./JS/utilities.js"></script>
+    <script src="./JS/withdraw.js"></script>
+    <script src="./JS/deposite.js"></script>
+</body>
+</html>
